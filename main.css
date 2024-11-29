@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    background: linear-gradient(9deg, rgba(25,23,110,1) 3%, rgba(2,0,36,1) 48%);
+    font-family: "News Cycle", serif; 
+    font-family: "Poppins", sans-serif;
+}
+.navigation{
+    background-color: #0c2461;
+    background-color: #19176e;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2em;
+    box-shadow: rgba(255, 254, 254, 0.16) 0px 3px 6px,
+     rgba(255, 255, 255, 0.23) 0px 3px 6px;
+}
+
+.logo img{
+    width: 200px;
+    -webkit-box-shadow: -2px 1px 11px 3px rgba(0,0,0,1);
+    -moz-box-shadow: -2px 1px 11px 3px rgba(0,0,0,1);
+    box-shadow: -2px 1px 11px 3px rgba(0,0,0,1);
+}
+.list ul{
+   /*  max-width: 700px; */
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+}
+.list ul li a{
+    text-decoration: none;
+    padding: 2px;
+    color: #ffffff;
+    font-weight: 800;
+}
+.list ul li a :hover, 
+.list ul li a :focus{
+    color:#ff4757;
+}
+.front-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.front-container img{
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(255, 255, 255, 0.07)
+    0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.cover-para{
+    color: #ffffff;
+    font-family: "News Cycle", serif;
+    max-width: 500px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.para-container{
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.para-front{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    gap: 5px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.man{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for definition */
+    text-align: center;
+    color: #fff; /* Text color */
+    letter-spacing: 10px;
+    position: sticky;
+    top: 0;
+}
+
+/* Style for Iron Man*/
+
+.Iron-man-content{
+    font-family: "News Cycle", serif;
+    color: #fff;
+    line-height: 1.6;
+    column-count: 2;
+    column-gap: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+.Iron-man-content img{
+    max-width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.Iron-man-content p::first-letter{
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin: 0 5px 0 0;
+    line-height: 1;
+}
+.Iron-man-details h3{
+    color:#ff4757;
+    text-decoration: underline;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 700;
+}
+@media (max-width:768px) {
+    .Iron-man-content{
+        column-count: 1;
+        column-gap: 0;
+        padding: 15px;
+    }
+}
+@media (min-width:1250px) {
+    .Iron-man-content{
+        column-count: 3;
+        column-gap: 20px;
+        padding: 15px;
+    }
+}
+
+footer{
+    background-color: #020024;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 8px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav ul li{
+    list-style: none;
+    padding-left: 4px;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-nav ul li a:hover,
+.footer-nav ul li a:focus{
+    color: #ff4757;
+}
+.author h4{
+    font-weight: 400;
+}
+.author a{
+    color: #ff4757;
+    text-decoration: none;
+    font-weight: 400;
+}
+.author a:hover,
+.author a:focus{
+    font-weight: 600;
+}
